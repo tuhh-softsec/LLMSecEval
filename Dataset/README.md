@@ -6,10 +6,11 @@ the description of the information included in them are given below:
   * Prompt ID:
   * CWE: 
   * NL Prompt:
-  * Comment by Pearce et al. 
-  * Prompt Quality Evaluation
-       * Naturalness
-       * Expressiveness
-       * Content Adequacy
-       * Conciseness
+  * Source Code Filepath:
+  * Comment by Pearce et al.:
+  * Prompt Quality Evaluation:
+       * Naturalness:
+       * Expressiveness:
+       * Content Adequacy:
+       * Conciseness:
   
