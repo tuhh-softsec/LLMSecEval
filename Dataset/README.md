@@ -14,3 +14,5 @@ the description of the information included in them are given below:
        * Content Adequacy:
        * Conciseness:
   
+### Secure Code Samples:
+In addition to the NL prompts, an example secure implementation of code corresponding to every NL prompt in the dataset is included in the folder: [Secure Code](https://github.com/tuhh-softsec/LLMSecEval/tree/main/Dataset/Secure%20Code).
