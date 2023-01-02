@@ -4,4 +4,11 @@ The dataset consists of 150 NL prompts covering 18 out of the top 25 CWE scenari
 the description of the information included in them are given below:
 
   * CWE ID: 
-  *
+  * NL Prompt:
+  * Comment by Pearce et al. 
+  * Prompt Quality Evaluation
+       * Naturalness
+       * Expressiveness
+       * Content Adequacy
+       * Conciseness
+  
