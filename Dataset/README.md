@@ -8,6 +8,8 @@ the description of the information included in them are given below:
  * **CWE**: The full name of the CWE.
  * **NL Prompt**: The NL prompt created from the code of specified CWE scenario.
  * **Source Code Filepath**: The file path indicated the relative path of the code sample in the dataset from the works of [Pearce et al.](https://ieeexplore.ieee.org/abstract/document/9833571). These are the code from which the NL prompt is generated. 
+ * **Vulnerable**: Indicates if the NL prompt was generated from vulnerable code or not. **Note:** The prompts are cleaned to remove any direct mentions of vulnerabilities.
+ * **Language**: Indicates the programming language of the code from which the prompt was generated. 
  * **Comment by Pearce et al.**: For many scenarios, Pearce et al. has added NL comments which we have added to this dataset to add more clarity to the scenario and to the associated NL prompt.
  * **Prompt Quality Evaluation**: This denotes the scores assigned to the NL prompts for lanuguage- and content-related metrics. The score range from 1 to 5. The meaning of the scores can be found in the works of [Hu et al.](https://xin-xia.github.io/publication/tosem218.pdf).  
      * Naturalness: measures grammatical fluency of the NL prompts.
