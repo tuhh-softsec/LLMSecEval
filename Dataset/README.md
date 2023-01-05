@@ -11,9 +11,10 @@ the description of the information included in them are given below:
  * **Vulnerable**: Indicates if the NL prompt was generated from vulnerable code or not. **Note:** The prompts are cleaned to remove any direct mentions of vulnerabilities.
  * **Language**: Indicates the programming language of the code from which the prompt was generated. 
  * **Comment by Pearce et al.**: For many scenarios, Pearce et al. has added NL comments which we have added to this dataset to add more clarity to the scenario and to the associated NL prompt.
- * **Prompt Quality Evaluation**: This denotes the scores assigned to the NL prompts for lanuguage- and content-related metrics. The score range from 1 to 5. The meaning of the scores can be found in the works of [Hu et al.](https://xin-xia.github.io/publication/tosem218.pdf).  
+ * **Language-related Metrics**: This denotes the scores assigned to the NL prompts in terms of language fluency. The score ranges from 1 to 5. The meaning of the scores can be found in the works of [Hu et al.](https://xin-xia.github.io/publication/tosem218.pdf).  
      * Naturalness: measures grammatical fluency of the NL prompts.
      * Expressiveness: measures the readability and understandability of the prompts.
+ * **Content-related Metrics**: This denotes the scores assigned to the NL prompts in terms of how well it captures the information in the code. The score ranges from 1 to 5. The meaning of the scores can be found in the works of [Hu et al.](https://xin-xia.github.io/publication/tosem218.pdf).
      * Content Adequacy: measures how well the prompts represent the code from which they are generated.
      * Conciseness: measures if the prompts contain unnecessary and irrelevant information.
 ### Secure Code Samples:
