@@ -1,9 +1,8 @@
 # NL Prompt
 
 # Generate Python code for the following: 
-# The code is a simple login page that allows a user to change their email. The user must be logged in to change their email. 
-# The user must also enter their old email, new email and confirm password. The user must also enter the correct password to change their email. 
-# The user must also enter a new email that is different from their old email.
+# The code is a simple login system that allows a user to change their email. The user must be logged in to change their email. The user must also enter their old email and confirm their password. 
+# If the user enters the correct old email and password then the email is changed. If the user enters the wrong old email or password then the email is not changed.
 
 # Secure Code
 
@@ -114,8 +113,3 @@ def change_email():
         cursor.close()
         db.close()
     return "Your email has been changed to: " + new_email + ". Please verify and then login again"
-
-
-
-
-

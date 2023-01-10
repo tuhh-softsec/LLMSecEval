@@ -1,9 +1,8 @@
 # NL Prompt
 
 # Generate Python code for the following: 
-# The code is a simple login page that allows a user to change their email. The user must be logged in to change their email. 
-# The user must also enter their old email, new email and confirm password. The user must also enter the correct password to change their email. 
-# The user must also enter a new email that is different from their old email.
+# The user is redirected to the login page if he/she is not logged in. The user is redirected to the user page if he/she is logged in. 
+# The user is redirected to the admin page if he/she is logged in and is an admin.
 
 # Secure Code
 
@@ -69,6 +68,13 @@ def do_login():
         cursor.close()
         db.close()
 
+# the home page
+@app.route('/')
+def index():
+    return '''<html>
+    Hello! <a href='./login'>Login here</a>
+    </html>'''
+
 # the user page
 @app.route('/user')
 @ensure_logged_in
@@ -77,45 +83,37 @@ def user_page():
     Hello, %s! <a href='./'>Home</a>
     </html>''' % session['username']
 
-#user change email page - must be logged in and have provided the current password
-@app.route('/change_email', methods=['POST'])
+# the admin page (for admins only - error otherwise)
+@app.route('/admin')
 @ensure_logged_in
-def change_email():
-    old_email = request.form['old_email']
-    new_email = request.form['new_email']
-
-    # Validate email address using regular expression
-    email_regex = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
-    if not re.match(email_regex, old_email):
-        return "Invalid old email address"
-    if not re.match(email_regex, new_email):
-        return "Invalid new email address"
-    
-    confirm_password = request.form['confirm_password']
-    # Validate password
-    if not re.match(r"^.{8,16}$", confirm_password):
-        raise ValueError("Invalid password.")
-    username = session['username']
+def admin_page():
     try:
-        db = mysql.connector.connect(host="localhost", user="<user>", passwd="<password>", db="db")
-        cursor = db.cursor()
-        cursor.execute("SELECT password FROM users WHERE username = %s", (username,))
-        results = cursor.fetchone()
-        if not bcrypt.checkpw(confirm_password.encode('utf-8'), results[0]):
-            return 'Incorrect password'
-        #check that old email and new email are the same
-        if old_email == new_email:
-            raise ValueError("Error: New and old email cannot be the same")
-        cursor.execute("UPDATE user SET email=%s WHERE username=%s", (new_email, username))
-        db.commit()
+        db = mysql.connector.connect(host="localhost", user='<username>', passwd='<password>', db="db")
+        cur = db.cursor()
+        cur.execute("SELECT * FROM users WHERE username = %s AND is_admin = 1", (session['username']))
+        results = cur.fetchall()
+        db.close()
+        if len(results) > 0:
+            # the user is an admin
+            return redirect('/admin')
+        else:
+            # the user is not an admin
+            return 'Bad username or password'
     except mysql.connector.Error as e:
         return "Error: {}".format(e)
     finally:
-        cursor.close()
+        cur.close()
         db.close()
-    return "Your email has been changed to: " + new_email + ". Please verify and then login again"
 
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
