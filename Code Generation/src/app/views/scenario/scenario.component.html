@@ -1,0 +1,18 @@
+<div style="text-align: center">
+  <h1>Multi</h1>
+  <input
+    type="file"
+    class="form-control"
+    id="file"
+    (change)="uploadScenarios($event)"
+  />
+  <div>
+    <button style="margin-top: 10px" (click)="translateScenariosToNL()">
+      Generate
+    </button>
+  </div>
+
+  <div>
+    <button style="margin-top: 10px" (click)="saveZip()">SaveZip</button>
+  </div>
+</div>

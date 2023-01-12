@@ -1,0 +1,14 @@
+<div style="text-align: center">
+  <h1>Report generation</h1>
+  <input
+    type="file"
+    class="form-control"
+    id="file"
+    (change)="uploadReportFile($event)"
+  />
+
+
+  <div>
+    <button style="margin-top: 10px" (click)="saveReport()">Save Report</button>
+  </div>
+</div>

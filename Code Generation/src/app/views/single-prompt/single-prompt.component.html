@@ -1,0 +1,24 @@
+<div style="text-align: center;">
+  <div>
+    <h1>Single Prompt - Debugging Purposes</h1>
+    <textarea
+      style="border: 1px solid black; width: 50%; height: 200px"
+      #prompt
+    >
+    </textarea>
+  </div>
+
+  <div>
+    <button
+      (click)="generateSinglePrompt(prompt.value)"
+    >
+      Generate
+    </button>
+  </div>
+
+  <div style="margin-top: 200px">
+    <pre *ngFor="let result of this.results" class="prettyprint">{{
+      result
+    }}</pre>
+  </div>
+</div>

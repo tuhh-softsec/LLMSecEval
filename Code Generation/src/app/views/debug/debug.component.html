@@ -1,0 +1,18 @@
+<div style="text-align: center">
+  <h1>Debug</h1>
+  <input
+    type="file"
+    class="form-control"
+    id="file"
+    (change)="uploadFile($event)"
+  />
+  <div>
+    <button style="margin-top: 10px" (click)="generateDebugs()">
+      Generate
+    </button>
+  </div>
+
+  <div>
+    <button style="margin-top: 10px" (click)="saveZip()">SaveZip</button>
+  </div>
+</div>
