@@ -1,0 +1,20 @@
+ #      Precompiled CodeQL query
+---
+format:
+- 202210190
+creator: "2.11.2"
+name: "FileNotAlwaysClosed.ql"
+dbscheme: "503c0516fba2e5da9570f00eb34ef43025ecb8fb"
+stages:
+- cached: "5b8e387e30514a722f76c8ba5c6546f15c82549c"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "a43d7bf862836cbb5aba68acdbc7749b473bfbd7"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "5e1e6998faebf4ada7b70ba83d50df27d6807b73"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "609cdaa5ff0ffc4060927543417985d37d3f6d77"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+results:
+  '#select':
+    resultArranger: "20ei12\"message\"s"
+inputsDigest: "e328136921dbd2b18460589815a03b509ab5d69b"

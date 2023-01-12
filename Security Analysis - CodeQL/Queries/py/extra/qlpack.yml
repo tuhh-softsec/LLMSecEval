@@ -1,0 +1,9 @@
+---
+library: false
+name: mutasdev/python-extra-queries
+dependencies:
+  codeql/python-all: '*'
+  codeql/python-queries: 0.5.1
+  codeql/suite-helpers: '*'
+extractor: python
+defaultSuiteFile: python-extra.qls

@@ -1,0 +1,6 @@
+---
+library: false
+name: mutasdev/top25-c
+version: 0.0.1
+dependencies:
+  codeql/cpp-queries: 0.4.2

@@ -1,0 +1,18 @@
+ #      Precompiled CodeQL query
+---
+format:
+- 202210190
+creator: "2.11.2"
+name: "ReDoS.ql"
+dbscheme: "503c0516fba2e5da9570f00eb34ef43025ecb8fb"
+stages:
+- cached: "5b8e387e30514a722f76c8ba5c6546f15c82549c"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "0844f1079bb57d2c86c2b89affb8c7cbb5ce9591"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "dcb6959ffbc4127cb1ad915c094aaee3d20afa41"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+results:
+  '#select':
+    resultArranger: "2\"t\"ei120s"
+inputsDigest: "643858019eece6c05968af45b26d320e1af6f9a1"

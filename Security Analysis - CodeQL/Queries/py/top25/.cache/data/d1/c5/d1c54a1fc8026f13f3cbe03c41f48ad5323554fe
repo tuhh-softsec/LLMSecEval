@@ -1,0 +1,18 @@
+ #      Precompiled CodeQL query
+---
+format:
+- 202210190
+creator: "2.11.2"
+name: "WeakFilePermissions.ql"
+dbscheme: "503c0516fba2e5da9570f00eb34ef43025ecb8fb"
+stages:
+- cached: "5b8e387e30514a722f76c8ba5c6546f15c82549c"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "a43d7bf862836cbb5aba68acdbc7749b473bfbd7"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "08f666b3e4fa19006826363d1f1bec230251ac18"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+results:
+  '#select':
+    resultArranger: "2\"call\"ei120s"
+inputsDigest: "d1c54a1fc8026f13f3cbe03c41f48ad5323554fe"

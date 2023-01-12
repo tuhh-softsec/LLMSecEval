@@ -1,0 +1,10 @@
+---
+dependencies:
+  codeql/java-queries:
+    version: 0.4.1
+  codeql/java-all:
+    version: 0.4.1
+  codeql/suite-helpers:
+    version: 0.1.0
+compiled: false
+lockVersion: 1.0.0

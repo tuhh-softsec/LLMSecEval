@@ -1,0 +1,26 @@
+ #      Precompiled CodeQL query
+---
+format:
+- 202210190
+creator: "2.11.2"
+name: "HardcodedCredentials.ql"
+dbscheme: "503c0516fba2e5da9570f00eb34ef43025ecb8fb"
+stages:
+- cached: "5b8e387e30514a722f76c8ba5c6546f15c82549c"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "a43d7bf862836cbb5aba68acdbc7749b473bfbd7"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "5e1e6998faebf4ada7b70ba83d50df27d6807b73"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "f40288e2d7b13094dbd0809d3b689d65ff63dfa4"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "eadc44f2062dd9358a58894a672a9bdcfd205d56"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "2d39fdb0edd45dca06b006bcc1bf29d234df3ba5"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+results:
+  edges:
+    resultArranger: "2\"fromnode\"ei12\"tonode\"ei12"
+  '#select':
+    resultArranger: "60ei12\"src\"ei12\"sink\"ei120s0ei120s"
+inputsDigest: "5759a5b9cbc3fd302e362e3f15209187754f6acc"

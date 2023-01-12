@@ -1,0 +1,2 @@
+- description: python queries for the top 25 cwe of 2021 from codeql python security package and copilot paper scenarios by pearce et al.
+- queries: ./

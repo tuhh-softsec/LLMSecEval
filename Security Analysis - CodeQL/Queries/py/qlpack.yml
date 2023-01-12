@@ -1,0 +1,6 @@
+name: mutasdev/python-queries
+defaultSuiteFile: python-all.qls
+dependencies: 
+  codeql/python-all: "*"
+  codeql/suite-helpers: "*"
+extractor: python

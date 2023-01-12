@@ -1,0 +1,16 @@
+ #      Precompiled CodeQL query
+---
+format:
+- 202210190
+creator: "2.11.2"
+name: "IncompleteUrlSubstringSanitization.ql"
+dbscheme: "503c0516fba2e5da9570f00eb34ef43025ecb8fb"
+stages:
+- cached: "5b8e387e30514a722f76c8ba5c6546f15c82549c"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "7ee8de2b0d6931592af4de7bb61d813c25ccd467"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+results:
+  '#select':
+    resultArranger: "4\"sanitizer\"ei120s\"url\"ei120s"
+inputsDigest: "ffabe520b8beaf20e1c2af99661d8c9df7383f15"

@@ -1,0 +1,10 @@
+---
+dependencies:
+  codeql/python-all:
+    version: 0.6.1
+  codeql/python-queries:
+    version: 0.5.1
+  codeql/suite-helpers:
+    version: 0.1.0
+compiled: false
+lockVersion: 1.0.0

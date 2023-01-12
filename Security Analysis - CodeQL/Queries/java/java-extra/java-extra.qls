@@ -1,0 +1,2 @@
+- description: extra java queries from codeql java security package
+- queries: ./

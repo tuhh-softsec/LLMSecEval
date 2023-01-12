@@ -1,0 +1,30 @@
+ #      Precompiled CodeQL query
+---
+format:
+- 202210190
+creator: "2.11.2"
+name: "CleartextLogging.ql"
+dbscheme: "503c0516fba2e5da9570f00eb34ef43025ecb8fb"
+stages:
+- cached: "5b8e387e30514a722f76c8ba5c6546f15c82549c"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "a43d7bf862836cbb5aba68acdbc7749b473bfbd7"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "0681d0e93ef6923ff44dba7b2c15cf66a40f1e71"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "cf52ae10b95e240db0c24d0ad7178684b5e3affc"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "425349296473a3b033e076fc35f4ebe3ee35d18e"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "0819afd50835c772dec7e1f27e05187c0db97624"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+results:
+  edges:
+    resultArranger: "2\"a\"ei12\"b\"ei12"
+  nodes:
+    resultArranger: "3\"n\"ei12\"key\"s\"val\"s"
+  subpaths:
+    resultArranger: "4\"arg\"ei12\"par\"ei12\"ret\"ei12\"out\"ei12"
+  '#select':
+    resultArranger: "60ei12\"source\"ei12\"sink\"ei120s0ei120s"
+inputsDigest: "11bf3c1a340ccb1935004828755cef96fd165dce"

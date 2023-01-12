@@ -1,0 +1,18 @@
+ #      Precompiled CodeQL query
+---
+format:
+- 202210190
+creator: "2.11.2"
+name: "WeakCryptoKey.ql"
+dbscheme: "503c0516fba2e5da9570f00eb34ef43025ecb8fb"
+stages:
+- cached: "5b8e387e30514a722f76c8ba5c6546f15c82549c"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "0844f1079bb57d2c86c2b89affb8c7cbb5ce9591"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "704ab242c98189e1bf602e607e0653fddb518df2"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+results:
+  '#select':
+    resultArranger: "4\"keyGen\"ei120s\"origin\"ei120s"
+inputsDigest: "00408d59cac33d4736af7e15e87bbff1f50a3fb7"

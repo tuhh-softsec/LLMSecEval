@@ -1,0 +1,18 @@
+ #      Precompiled CodeQL query
+---
+format:
+- 202210190
+creator: "2.11.2"
+name: "FlaskDebug.ql"
+dbscheme: "503c0516fba2e5da9570f00eb34ef43025ecb8fb"
+stages:
+- cached: "5b8e387e30514a722f76c8ba5c6546f15c82549c"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "a43d7bf862836cbb5aba68acdbc7749b473bfbd7"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "97f75879520be3e0afbe9511a5e950023426789a"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+results:
+  '#select':
+    resultArranger: "2\"call\"ei120s"
+inputsDigest: "32df3ac057d42e1e099f2d23723aeb9c6974301c"

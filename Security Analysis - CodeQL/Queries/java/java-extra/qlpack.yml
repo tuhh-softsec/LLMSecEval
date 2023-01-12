@@ -1,0 +1,6 @@
+---
+library: false
+name: java-extra
+version: 0.0.1
+dependencies:
+  codeql/java-queries: 0.4.1

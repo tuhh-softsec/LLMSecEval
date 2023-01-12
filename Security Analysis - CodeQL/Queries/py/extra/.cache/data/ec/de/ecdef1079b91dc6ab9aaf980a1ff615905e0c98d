@@ -1,0 +1,30 @@
+ #      Precompiled CodeQL query
+---
+format:
+- 202210190
+creator: "2.11.2"
+name: "UntrustedDataToExternalAPI.ql"
+dbscheme: "503c0516fba2e5da9570f00eb34ef43025ecb8fb"
+stages:
+- cached: "5b8e387e30514a722f76c8ba5c6546f15c82549c"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "0844f1079bb57d2c86c2b89affb8c7cbb5ce9591"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "483d1877e095b0038e022d8a394972d054830b04"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "0a673c1a18c6b15539e05cfa8f6f6d5d724ed575"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "d537559fb098ec9f94034d40f61fec3b2a2db404"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "57ec05009005f335289bd500f2fb5c8e512bc61e"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+results:
+  edges:
+    resultArranger: "2\"a\"ei12\"b\"ei12"
+  nodes:
+    resultArranger: "3\"n\"ei12\"key\"s\"val\"s"
+  subpaths:
+    resultArranger: "4\"arg\"ei12\"par\"ei12\"ret\"ei12\"out\"ei12"
+  '#select':
+    resultArranger: "60ei12\"source\"ei12\"sink\"ei120s0ei120s"
+inputsDigest: "ecdef1079b91dc6ab9aaf980a1ff615905e0c98d"

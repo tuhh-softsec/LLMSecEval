@@ -1,0 +1,18 @@
+ #      Precompiled CodeQL query
+---
+format:
+- 202210190
+creator: "2.11.2"
+name: "BadTagFilter.ql"
+dbscheme: "503c0516fba2e5da9570f00eb34ef43025ecb8fb"
+stages:
+- cached: "5b8e387e30514a722f76c8ba5c6546f15c82549c"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "0844f1079bb57d2c86c2b89affb8c7cbb5ce9591"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "acfede8d51efd876b425ae2890d3c57df8a57775"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+results:
+  '#select':
+    resultArranger: "2\"regexp\"ei12\"msg\"s"
+inputsDigest: "7aee5fb9993c548b0c0e063b5c5690766d9b06b0"

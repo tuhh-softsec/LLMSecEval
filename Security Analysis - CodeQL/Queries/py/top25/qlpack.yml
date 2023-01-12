@@ -1,0 +1,9 @@
+---
+library: false
+name: mutasdev/python-top25-queries
+dependencies:
+  codeql/python-all: '*'
+  codeql/python-queries: 0.5.2
+  codeql/suite-helpers: '*'
+extractor: python
+defaultSuiteFile: python-top25.qls

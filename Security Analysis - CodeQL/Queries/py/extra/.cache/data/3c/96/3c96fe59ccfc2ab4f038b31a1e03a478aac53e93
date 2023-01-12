@@ -1,0 +1,24 @@
+ #      Precompiled CodeQL query
+---
+format:
+- 202210190
+creator: "2.11.2"
+name: "InsecureProtocol.ql"
+dbscheme: "503c0516fba2e5da9570f00eb34ef43025ecb8fb"
+stages:
+- cached: "5b8e387e30514a722f76c8ba5c6546f15c82549c"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "0844f1079bb57d2c86c2b89affb8c7cbb5ce9591"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "483d1877e095b0038e022d8a394972d054830b04"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "0a673c1a18c6b15539e05cfa8f6f6d5d724ed575"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "d537559fb098ec9f94034d40f61fec3b2a2db404"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+- cached: "317452330d411756dcc22d329b946069b0dfff4b"
+  debugInfo: "fecaa121855b37cb5060daceb1adc2e02056f801"
+results:
+  '#select':
+    resultArranger: "4\"connectionCreation\"ei120s\"protocolConfiguration\"ei120s"
+inputsDigest: "3c96fe59ccfc2ab4f038b31a1e03a478aac53e93"
