@@ -1,8 +1,6 @@
 # Natural Language and Code Generation
 
-This project includes the source code of a web application used for communication with the API endpoints of OpenAI's Playground for accessing the GPT- and Codex-Models.
-This web application was used to perform the research described in [this](https://project.mutas.dev) research project.
-
+This folder includes the source code of a web application used for communication with the API endpoints of OpenAI's Playground for accessing the GPT- and Codex-Models.
 
 # Installation and Starting the Web Application
 ## Requirements: 
@@ -10,10 +8,10 @@ This web application was used to perform the research described in [this](https:
    * Angular (https://angular.io)
       
 ## Installation:
-   1. Check out the repository via `git clone https://github.com/mutasDev/NatLangCodeGen.git`
-   2. in the repositories home directory execute `npm install`
-   3. in the repositories home directory execute `ng serve`
-      This will compile and start the application, access the application in your browser under `localhost:4200`
+   1. Clone the repository
+   2. in the applications home directory execute `npm install`
+   3. in the applications home directory execute `ng serve`
+      This will compile and start the application, access the application in your browser under `http://localhost:4200`
            
 
 ## Configuration 
@@ -24,10 +22,10 @@ This web application was used to perform the research described in [this](https:
  **Important: ** Usage of the Codex model requires beta access to the API which has to be requested from OpenAI.
  
  
- In this environment file, the parameters for the requests are also configurable. Parameters without `nl_` before their name refer to the parameters for GPT-3 requests and parameters with the `nl_` prefix are used in the request to the Codex model.
+ In this environment file, the parameters for the requests are also configurable. Parameters without `nl_` before their name refer to the parameters for program synthesis (NL -> Code Translation) requests and parameters with the `nl_` prefix are used in the request for code explanation (Code -> NL Descriptions).
  
  The parameters are explained best in the [OpenAI Playground](https://beta.openai.com/playground) on the right side.
- The two paremeters *pretext* and *posttext* are string fields that are added to each prompt before or after the "main"prompt, respectively.
+ The two paremeters *pretext* and *posttext* are string fields that are added to each prompt before or after the "main" prompt, respectively.
 
 # Functionality
 The web application offers several options for handling requests to and from the OpenAI-API.
