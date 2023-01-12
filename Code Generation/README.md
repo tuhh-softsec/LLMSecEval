@@ -68,15 +68,15 @@ Currently, four Features are enabled:
 ## Input Format of Multi Prompts
 The Multiprompt Feature creates completions via the GPT-3 model. It was used to create code snippets from natural language descriptions.
 The input json files should contain the following information:
-        + *text* : the natural language description of the code to be generated
-        + *language* : the programming language the code should be generated in (currently supported: Java, C, Python, C++, Javascript)
-        + *name* (optional) : name of the file to be generated
++ *text* : the natural language description of the code to be generated
++ *language* : the programming language the code should be generated in (currently supported: Java, C, Python, C++, Javascript)
++ *name* (optional) : name of the file to be generated
 
 ## Output Format of Scenario Translation
 The Scenario Translation Feature creates completions via the Codex model. It was used to natural language descriptions from code snippets.
 The output json files contains the following information:
-        + *text* : the generated natural language description
-        + *language* : the programming language of the source file translated (if possible)
-        + *name* : file name incl. the directory
-        + *vulnerable* : flag set based on existing CodeQL Result files in the directory of the code snippet, undefined if no results file found
-        + a score field for each of the four scores *naturalness*, *expressiveness*, *contentadequacy*, *conciseness*, all set to empty value
++ *text* : the generated natural language description
++ *language* : the programming language of the source file translated (if possible)
++ *name* : file name incl. the directory
++ *vulnerable* : flag set based on existing CodeQL Result files in the directory of the code snippet, undefined if no results file found
++ a score field for each of the four scores *naturalness*, *expressiveness*, *contentadequacy*, *conciseness*, all set to empty value
