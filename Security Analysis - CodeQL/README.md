@@ -4,13 +4,13 @@ on a database representation of the code. To do so, first this database represen
 
 ## Usage of DB Creation Scripts
 The scripts to create the codeql databases work the same for the different languages to be generated.
-The available languages are C (create_db_c.sh), Python(create_db_python.sh) and Java(create_db_java.sh). For the diff
+The available languages are C (create_db_c.sh), Python(create_db_python.sh) and Java(create_db_java.sh).
 Create CodeQL-dbs by invoking the shell scripts with two command line parameters.
-The first parameter is the path to the source root of the files under analysis, relative to "../Data/Synth/".
+The first parameter is the path to the source root of the files under analysis.
 The second parameter is the name the created db should be given. It will be created in the folder the script is executed in.
 ### Example
 
-`sh create_db_python.sh Codex/py/1 python_example_db`
+`sh create_db_python.sh ~/Codebase python_example_db`
 
 
 ## Usage of DB Analysis Scripts
