@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Tony"
+  given-names: "Catherine"
+  orcid: "https://orcid.org/0000-0002-9916-4456"
+- family-names: "Mutas"
+  given-names: "Markus"
+  orcid: ""
+- family-names: "Díaz Ferreyra"
+  given-names: "Nicolas"
+  orcid: "https://orcid.org/0000-0001-6304-771X"
+- family-names: "Scandariato"
+  given-names: "Riccardo"
+  orcid: "https://orcid.org/0000-0003-3591-7671"
+title: "LLMSecEval: A Dataset of Natural Language Prompts for Security Evaluations"
+version: 1.0
+doi: 10.5281/zenodo.7565965
+date-released: 2023-01-24
+url: "https://github.com/tuhh-softsec/LLMSecEval"
