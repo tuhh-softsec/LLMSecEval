@@ -1,6 +1,5 @@
 import { stringify } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
-import { writeToPath } from 'fast-csv';
 import * as saveAs from 'file-saver';
 import { OpenAIService } from 'src/app/services/open-ai.service';
 

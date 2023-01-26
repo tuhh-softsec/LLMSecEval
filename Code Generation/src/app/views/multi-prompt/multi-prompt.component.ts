@@ -119,7 +119,6 @@ function buildGeneratedCode(
       delimit = '\n//';
       break;
     case ProgrammingLanguage.PYTHON:
-      console.log("pydelimit");
       delimit = '\n#';
       break;
     case ProgrammingLanguage.JAVA:
