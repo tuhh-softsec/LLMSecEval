@@ -34,18 +34,18 @@ Currently, four Features are enabled:
 
    1. Single Prompt
       + Sends a Single Completion Request to the GPT-3 API and displays the response in the textfield below the input
-      + Uses the parameters from the [environment file](/src/environments/environment.ts) 
+      + Uses the parameters from the [environment file](/Code%20Generation/src/environments/environment.ts) 
       
    2. Multi Prompt
-      + Sends multiple completion requests to the GPT-3 API sequentially and stores the results in generated source files
-      + uses the parameters from the [environment file](/src/environments/environment.ts) 
+      + Sends multiple completion requests to the Codex or GPT-3 API sequentially and stores the results in generated source files
+      + uses the parameters from the [environment file](/Code%20Generation/src/environments/environment.ts) 
       + The input is uploaded as a zip archive containing .json files, exact json format see below
       + The *Generate* button starts the sequential handling of the requests
       + After the generation is done (currently only visible in the developer console of the browser) the *save Zip* button saves a zip archive conttaining the generated source files, file format depends on the language field in the respective json entry of the prompt
       
    3. Scenario Translation
       + Sends multiple completion requests to the Codex API sequentially and stores the results in generated json files (ATTENTION: only files that contain the string "experiment" are included in the parsing process and will be translated)
-      + uses the parameters with nl_ prefix from the [environment file](/src/environments/environment.ts)
+      + uses the parameters with nl_ prefix from the [environment file](/Code%20Generation/src/environments/environment.ts)
       + returns a zip archive containing the generated responses in json formats, exact json format see below
       + The *Generate* button starts the sequential handling of the requests
       + As the Codex API has a different limit than the GPT-3 API, a rate limiting was enabled vie the in browser debugger being called after every 100 requests. When that occurs, wait a little bit (around 1-2 minutes should suffice) and press continue on the debugger window. This will continue the sequential processing of the requests. Not waiting for long enough can result in the crash of the request process and then one needs to restart the process with all requests.
