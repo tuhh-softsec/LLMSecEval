@@ -39,7 +39,7 @@ Currently, four Features are enabled:
    2. Multi Prompt
       + Sends multiple completion requests to the Codex or GPT-3 API sequentially and stores the results in generated source files
       + uses the parameters from the [environment file](/Code%20Generation/src/environments/environment.ts) 
-      + The input is uploaded as a zip archive containing .json files, exact json format see below
+      + The input is uploaded as a JSON file containing an array of prompts. Exact format of the 
       + The *Generate* button starts the sequential handling of the requests
       + After the generation is done (currently only visible in the developer console of the browser) the *save Zip* button saves a zip archive conttaining the generated source files, file format depends on the language field in the respective json entry of the prompt
       
@@ -67,10 +67,10 @@ Currently, four Features are enabled:
 # JSON Formats
 ## Input Format of Multi Prompts
 The Multiprompt Feature creates completions via the GPT-3 model. It was used to create code snippets from natural language descriptions.
-The input json files should contain the following information:
-+ *text* : the natural language description of the code to be generated
-+ *language* : the programming language the code should be generated in (currently supported: Java, C, Python, C++, Javascript)
-+ *name* (optional) : name of the file to be generated
+The input json should contain a json array containing entries for each prompt. Each prompt should contain at least the following information:
++ *Modified Prompt* : the natural language description of the code to be generated
++ *Language* : the programming language the code should be generated in (currently supported: Java, C, Python, C++, Javascript)
++ *Filename* (optional) : name of the file to be generated (may include directories)
 
 ## Output Format of Scenario Translation
 The Scenario Translation Feature creates completions via the Codex model. It was used to natural language descriptions from code snippets.
