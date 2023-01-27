@@ -1,6 +1,6 @@
 # LLMSecEval Dataset
 
-The dataset consists of 150 NL prompts covering 18 out of the top 25 CWE scenarios of 2021. The dataset is provided as a .csv file. The columns and
+The dataset consists of 150 NL prompts covering 18 out of the top 25 CWE scenarios of 2021. The dataset is provided as a CSV as well as a JSON file. The columns and
 the description of the information included in them are given below:
  * **Prompt ID**: Every prompt is given a unique ID in the following format: CWE-\<CWE ID>\_\<abbreviation of the CWE name>-\<scenario variation>\<code sample>.
  
