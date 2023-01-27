@@ -15,6 +15,8 @@ To make the prompts language-agnostic, terms associated with specific programmin
     stdin --> standard input
 
     @app.route decorator --> a decorator
+    
+    login.html page --> login page
   
   
   Above, is the list of terms encountered in the current dataset so far. This list may increase when we extend the dataset.
