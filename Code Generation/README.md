@@ -1,6 +1,6 @@
-# Natural Language and Code Generation
+# Natural Language Description and Code Generation
 
-This folder includes the source code of a web application used for communication with the API endpoints of OpenAI's Playground for accessing the GPT- and Codex-Models.
+This folder includes the source code of a web application used for communication with the API endpoints of OpenAI's Playground for accessing the GPT- and Codex-Models.This application can be used to generate NL descriptions from code as well as to generate code from NL descriptions. 
 
 # Installation and Starting the Web Application
 ## Requirements: 
@@ -15,17 +15,16 @@ This folder includes the source code of a web application used for communication
            
 
 ## Configuration 
- To use the OpenAI APIs an API key is needed. Such an API key can be received from the [OpenAI Playground](https://beta.openai.com/playground) after logging into your OpenAI Account and in the API Keys section of the user setting. 
+To use the OpenAI APIs an **API key** is needed. Such an API key can be received from the [OpenAI Playground](https://beta.openai.com/playground) after logging into your OpenAI Account and in the API Keys section of the user setting. 
  
  Copy your API key to the [environment file](/src/environments/environment.ts) into the empty string field named *OPENAI_API_KEY*.
  
- **Important: ** Usage of the Codex model requires beta access to the API which has to be requested from OpenAI.
+ **Important:** Usage of the Codex model requires beta access to the API which has to be requested from OpenAI.
  
+In this environment file, the parameters for the requests are also configurable. Parameters without `nl_` before their name refer to the parameters for program synthesis (NL Descriptions -> Code) requests and parameters with the `nl_` prefix are used in the request for code explanation (Code -> NL Descriptions).
  
- In this environment file, the parameters for the requests are also configurable. Parameters without `nl_` before their name refer to the parameters for program synthesis (NL -> Code Translation) requests and parameters with the `nl_` prefix are used in the request for code explanation (Code -> NL Descriptions).
- 
- The parameters are explained best in the [OpenAI Playground](https://beta.openai.com/playground) on the right side.
- The two paremeters *pretext* and *posttext* are string fields that are added to each prompt before or after the "main" prompt, respectively.
+The parameters are explained best in the [OpenAI Playground](https://beta.openai.com/playground) on the right side. 
+The two paremeters *pretext* and *posttext* are string fields that are added to each prompt before or after the "main" prompt, respectively.
 
 # Functionality
 The web application offers several options for handling requests to and from the OpenAI-API.
@@ -33,7 +32,7 @@ The web application offers several options for handling requests to and from the
 Currently, four Features are enabled:
 
    1. Single Prompt
-      + Sends a Single Completion Request to the GPT-3 API and displays the response in the textfield below the input
+      + Sends a single completion request to the GPT-3 API and displays the response in the textfield below the input
       + Uses the parameters from the [environment file](/Code%20Generation/src/environments/environment.ts) 
       
    2. Multi Prompt
