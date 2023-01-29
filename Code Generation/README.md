@@ -32,7 +32,7 @@ The web application offers several options for handling requests to and from the
 Currently, three features are enabled:
 
    1. Single Prompt
-      + For generating code from NL description one prompt at a time
+      + For generating code from NL description one prompt at a time. An NL prompt can be directly entered into the text field to generate the corresponding code snippet. 
       + Sends a single completion request to the GPT-3 API and displays the response in the textfield below the input
       + Uses the parameters from the [environment file](/Code%20Generation/src/environments/environment.ts) 
       
