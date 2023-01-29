@@ -29,15 +29,15 @@ The two paremeters *pretext* and *posttext* are string fields that are added to 
 # Functionality
 The web application offers several options for handling requests to and from the OpenAI-API.
 
-Currently, four Features are enabled:
+Currently, three Features are enabled:
 
    1. Single Prompt
-      + For generating code from NL description
+      + For generating code from NL description one prompt at a time
       + Sends a single completion request to the GPT-3 API and displays the response in the textfield below the input
       + Uses the parameters from the [environment file](/Code%20Generation/src/environments/environment.ts) 
       
    2. Multi Prompt
-      + For generating code from NL description
+      + For generating code from NL description using multiple prompts at a time
       + Sends multiple completion requests to the Codex or GPT-3 API sequentially and stores the results in generated source files
       + Uses the parameters from the [environment file](/Code%20Generation/src/environments/environment.ts) 
       + The input is uploaded as a JSON file containing an array of prompts. The JSON dataset file is provided in the [Dataset](https://github.com/tuhh-softsec/LLMSecEval/tree/main/Dataset) folder. 
