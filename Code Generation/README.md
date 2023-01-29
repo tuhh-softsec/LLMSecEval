@@ -1,6 +1,6 @@
 # Natural Language Description and Code Generation
 
-This folder includes the source code of a web application used for communication with the API endpoints of OpenAI's Playground for accessing the GPT- and Codex-Models.This application can be used to generate NL descriptions from code as well as to generate code from NL descriptions. 
+This folder includes the source code of a web application used for communication with the API endpoints of OpenAI's Playground for accessing the GPT- and Codex-Models. This application can be used to generate NL descriptions from code as well as to generate code from NL descriptions. 
 
 # Installation and Starting the Web Application
 ## Requirements: 
@@ -29,7 +29,7 @@ The two paremeters *pretext* and *posttext* are string fields that are added to 
 # Functionality
 The web application offers several options for handling requests to and from the OpenAI-API.
 
-Currently, three Features are enabled:
+Currently, three features are enabled:
 
    1. Single Prompt
       + For generating code from NL description one prompt at a time
