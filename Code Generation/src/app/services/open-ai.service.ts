@@ -80,7 +80,7 @@ export class OpenAIService {
     this.counter = dataJson.length;
     dataJson.forEach((entry) => {
       this.jsonObj.push({
-        text: entry["Modified Prompt"],
+        text: entry["NL Prompt"],
         language: entry["Language"],
         name: entry["Filename"],
       });
