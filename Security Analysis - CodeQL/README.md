@@ -1,5 +1,5 @@
 ## Workflow of CodeQL
-CodeQL treats Code like data. Software vulnerabilities are found in code by executing queries (one specific software vulnerability = one specific query)
+CodeQL treats code like data. Software vulnerabilities are found in code by executing queries (one specific software vulnerability = one specific query)
 on a database representation of the code. To do so, first this database representation of the code files under scope of analysis have to be created. Then queries or query sets can be run against the database. The results of the queries will be printed to a result file.
 
 ## Usage of DB Creation Scripts
