@@ -31,8 +31,9 @@ The web application offers several options for handling requests to and from the
 
 Currently, three features are enabled:
 
-   1. Single Prompt
+   1. Single Prompt     
       + For generating code from NL description one prompt at a time. An NL prompt can be directly entered into the text field to generate the corresponding code snippet. 
+      + This feature was created just for debugging purposes. 
       + Sends a single completion request to the GPT-3 API and displays the response in the textfield below the input
       + Uses the parameters from the [environment file](/Code%20Generation/src/environments/environment.ts) 
       
@@ -43,6 +44,9 @@ Currently, three features are enabled:
       + The input is uploaded as a JSON file containing an array of prompts. The JSON dataset file is provided in the [Dataset](https://github.com/tuhh-softsec/LLMSecEval/tree/main/Dataset) folder. 
       + The *Generate* button starts the sequential handling of the requests
       + After the generation is done (currently only visible in the developer console of the browser) the *save Zip* button saves a zip archive conttaining the generated code files, file format depends on the language field in the respective json entry of the prompt
+      <p align="center">
+      <img width="500" alt="Screenshot 2023-01-29 at 16 07 35" src="https://user-images.githubusercontent.com/49638246/215336243-848bdea7-5386-44e0-98b4-e9af280c6a0e.png">
+      </p>
       
    3. Scenario Translation
       + For generating NL description from code snippets
@@ -52,8 +56,10 @@ Currently, three features are enabled:
       + The *Generate* button starts the sequential handling of the requests
       + As the Codex API has a different limit than the GPT-3 API, a rate limiting was enabled via the in-browser debugger being called after every 100 requests. When that occurs, wait a little bit (around 1-2 minutes should suffice) and press continue on the debugger window. This will continue the sequential processing of the requests. Not waiting for long enough can result in the crash of the request process and then one needs to restart the process with all requests.
       + After the generation is done (currently only visible in the developer console of the browser) the *save Zip* button saves a zip archive containing the generated natural language descriptions as json files in a zip archive.
-      
-        
+      <p align="center">
+      <img width="500" alt="Screenshot 2023-01-29 at 16 07 47" src="https://user-images.githubusercontent.com/49638246/215336268-3399a4f6-0163-47ca-93aa-531ea4da661f.png">
+      </p>
+
 # JSON Formats
 ## Input Format of Multi Prompts
 The Multiprompt Feature creates completions via the Codex and GPT-3 model. It is used to create code snippets from natural language descriptions.
