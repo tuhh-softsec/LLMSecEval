@@ -30,4 +30,4 @@ The results will be printed in csv format.
 
 #### Example 
 
-`sh analyse_db.sh ~/codeql/python/ql/src/codeql-suites/python-security-extended.qls python_example_db ~/Results/python_results_sec_extended.csv`
+`sh analyse_db.sh Queries/py/top25/python-top25.qls python_example_db ~/Results/python_results_sec_extended.csv`
