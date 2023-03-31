@@ -26,7 +26,7 @@ In addition to the dataset, we have created a web application that can be used t
 And finally, an interface to detect vulnerabilities associated with 18 out of the top 25 CWEs using CodeQL queries is present in the folder: [Security Analysis - CodeQL](https://github.com/tuhh-softsec/LLMSecEval/tree/main/Security%20Analysis%20-%20CodeQL).
 
 
-This repository is part of our publication in the 20th International Conference on Mining Software Repositories (MSR 2023). If you use LLMSecEval in academic context, please cite it as follows:
+This repository is part of our publication in the **20th International Conference on Mining Software Repositories (MSR 2023)**. If you use LLMSecEval in academic context, please cite it as follows:
 
     @inproceedings{llmseceval2023,
       title     = {LLMSecEval: A Dataset of Natural Language Prompts for Security Evaluations},  
