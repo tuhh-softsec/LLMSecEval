@@ -7,7 +7,7 @@ Some of the information included in the promtps file are shown below:
 
  * **Prompt ID**: The unique ID of the prompt
  * **CWE**: The full name of the CWE.
- * **NL Prompt**: The NL prompt created from the code of specified CWE scenario.
+ * **LLM-generated NL Prompt**: The NL prompt created from the code of specified CWE scenario by the LLM.
  * **Source Code Filepath**: The file path indicated the relative path of the code sample in the dataset from the works of [Pearce et al.](https://ieeexplore.ieee.org/abstract/document/9833571). These are the code from which the NL prompt is generated. 
  * **Vulnerable**: Indicates if the NL prompt was generated from vulnerable code or not. **Note:** The prompts are cleaned to remove any direct mentions of vulnerabilities.
  * **Language**: Indicates the programming language of the code from which the prompt was generated. 
@@ -17,6 +17,7 @@ Some of the information included in the promtps file are shown below:
  * **Content-related Metrics**: This denotes the scores assigned to the NL prompts in terms of how well it captures the information in the code. The score ranges from 1 to 5. The meaning of the scores can be found in the works of [Hu et al.](https://xin-xia.github.io/publication/tosem218.pdf).
      * Content Adequacy: measures how well the prompts represent the code from which they are generated.
      * Conciseness: measures if the prompts contain unnecessary and irrelevant information.
+  * **Manually-fixed Prompts**: The manually fixed versions of LLM-generated NL prompts with low scores.
 
 More details of the dataset and its usage instructions can be found in the folder: [Dataset](https://github.com/tuhh-softsec/LLMSecEval/tree/main/Dataset).
 
